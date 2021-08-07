@@ -1,0 +1,95 @@
+.wrapper{
+  position: relative;
+  
+  width: 640px;
+  height: 640px;
+  margin: 74px auto;
+}
+
+/* 设置按钮 */
+.set{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  top: -35px;
+
+}
+.set div{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.set .diff{
+  text-align: center;
+}
+
+
+/* 遮罩层 */
+.btn{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* 开始和暂停的控制按钮 */
+.btn button {
+  position: absolute;
+  height: 60px;
+  width: 140px;
+  left: calc(50% - 70px);
+  top: calc(50% - 30px);
+
+  outline: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+
+  font-size: 25px;
+  font-weight: bold;
+  font-family: cursive;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+}
+.stopBtn {
+  display: none;
+}
+
+/* 游戏空间 */
+.snakeWrap{
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background-color: #225675;
+  border: 20px solid #7dd9ff;
+}
+
+.snakeWrap div {
+  height: 20px;
+  width: 20px;
+
+}
+.snakeWrap .snakeHead{
+  background-color: #00ff90;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: rotate(-45deg);
+}
+
+.snakeWrap .snakeBody{
+  background-color: #9ddbb1;
+  border-radius: 50%;
+}
+
+.food{
+  background-color: red;
+  border-radius: 50%;
+}
